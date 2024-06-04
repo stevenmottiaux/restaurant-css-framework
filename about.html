@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css">
+    <script defer src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Bootstrap demo</title>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg bg-body">
+        <div class="container-fluid">
+            <a class="navbar-brand d-block d-lg-none mx-auto" href="#">
+                <img src="./assets/images/logo.png" alt="Logo" class="d-block mx-auto">
+            </a>
+            <a class="navbar-brand d-none d-lg-block" href="#">
+                <img src="./assets/images/logo.png" alt="Logo">
+            </a>
+            <div class="d-inline">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  mx-auto fs-5 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./about.html">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pictures.html">Galerie</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./menu.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="true">
+                            Notre menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./menu.html">Burgers végétariens</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./menu.html">Burgers classiques</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./menu.html">Burgers spéciaux</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Breadcrumb -->
+    <nav class="mt-3 bg-light" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active"><a href="#">Accueil</a></li>
+            <li class="breadcrumb-item"><a href="#">A propos</a></li>
+        </ol>
+    </nav>
+    <!-- Jumbotron -->
+    <div class=" jumbotron  jumbotron-fluid my-5 ">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <h1 class="display-5 lg-display-4 text-nowrap">L'HTML - L'Hyper Tasty MeaL</h1>
+            <p class="lead">Découvrez toutes nos adresses où se régaler !</p>
+        </div>
+    </div>
+    <!-- Adresses des restaurants-->
+    <div class="container px-4 bg-light" id="custom-cards">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('unsplash-photo-1.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Anvers</h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <img src="./assets/images/burger-badge.png" alt="Badge Burger"
+                                    class="burger-badge rounded-circle border border-white">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg>
+                                <small>Santiagostraat 3, 2030 Antwerpen</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <small>9h30 - 12h30</small>
+                                <small>13h30 - 22h</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('unsplash-photo-2.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Bruxelles</h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <img src="./assets/images/burger-badge.png" alt="Badge Burger"
+                                    class="burger-badge rounded-circle border border-white">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg>
+                                <small>Cantersteen 12, 1000 Bruxelles</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#calendar3"></use>
+                                </svg>
+                                <small>9h30 - 12h30</small>
+                                <small>13h30 - 22h</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('unsplash-photo-3.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Liège</h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <img src="./assets/images/burger-badge.png" alt="Badge Burger"
+                                    class="burger-badge rounded-circle border border-white">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg>
+                                <small>Rue des Guillemins 2, 4000 Liège</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#calendar3"></use>
+                                </svg>
+                                <small>9h30 - 12h30</small>
+                                <small>13h30 - 22h</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-1 row-cols-md-3 py-sm-3 py-lg-5 my-5 border-top text-center">
+      <div class="col mb-1">
+        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <p class="text-body-secondary">©HTML 2024</p>
+      </div>
+      <div class="col mb-1">
+        <h5>Contact:</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">Téléphone: 012345678</li>
+          <li class="nav-item mb-2">E-mail: info@html.be</li>
+        </ul>
+      </div>
+  
+      <div class="col mb-1">
+        <h5>Sections:</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-body-secondary">Accueil</a></li>
+          <li class="nav-item mb-2"><a href="./about.html" class="nav-link p-0 text-body-secondary">A propos</a></li>
+          <li class="nav-item mb-2"><a href="./pictures.html" class="nav-link p-0 text-body-secondary">Galerie</a></li>
+          <li class="nav-item mb-2"><a href="./menu.html" class="nav-link p-0 text-body-secondary">Notre menu</a></li>
+          <li class="nav-item mb-2"><a href="./contact.html" class="nav-link p-0 text-body-secondary">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div> 
+</body>
+
+</html>
