@@ -6,12 +6,16 @@
   <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css">
   <script defer src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="./styles.css">
-  <title>Bootstrap demo</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/favicon/site.webmanifest">
+  <title>L'HTML - Meilleurs burgers de Belgique - Galerie</title>
+  <script src="./pagination.js"></script>
 </head>
 <body>
-
-   <!-- Header qui contient le logo et le menu principal -->
-   <nav class="navbar sticky-top navbar-expand-lg bg-body">
+  <!-- Header qui contient le logo et le menu principal -->
+  <nav class="navbar sticky-top navbar-expand-lg bg-body border-bottom">
     <div class="container-fluid">
       <a class="navbar-brand d-block d-lg-none mx-auto" href="#">
         <img src="./assets/images/logo.png" alt="Logo" class="d-block mx-auto">
@@ -28,16 +32,17 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav  mx-auto fs-5 mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Accueil</a>
+            <a class="nav-link" aria-current="page" href="./index.html">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./about.html">A propos</a>
+            <a class="nav-link" aria-current="page" href="./about.html">A propos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pictures.html">Galerie</a>
+            <a class="nav-link active" href="./pictures.html">Galerie</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="./menu.html" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+            <a class="nav-link dropdown-toggle" href="./menu.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="true">
               Notre menu
             </a>
             <ul class="dropdown-menu">
@@ -59,202 +64,153 @@
       </div>
     </div>
   </nav>
-  <!-- Breadcrumb -->
-  <nav class="mt-3 bg-light" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="./index.html">Accueil</a></li>
-      <li class="breadcrumb-item active"><a href="./menu.html">Notre menu</a></li>
-    </ol>
-  </nav>
   <!-- Section titre de la galerie d'images -->
   <section class="py-5 text-center container">
-    <div class="row py-lg-5">
+    <div class="row py-lg-2">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Album example</h1>
-        <p class="lead text-body-secondary">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <h1 class="fw-light">Quelques photos... &#x1F4F8;</h1>
+        <p class="lead text-body-secondary">Parce que quelques photos sont mieux qu'un long discours, découvrez nos
+          restaurants et burgers en images !</p>
       </div>
     </div>
-  </section> 
+  </section>
   <div class="album py-5 bg-body-tertiary">
     <div class="container">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
+      <div class="first-images-group">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/burger-1.png" alt="burger image">
+              <div class="card-body">
+                <p class="card-text">Une première image de burger.</p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/burger-2.png" alt="burger image">
+              <div class="card-body">
+                <p class="card-text">Une deuxième image de burger.</p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/burger-3.png" alt="burger image">
+              <div class="card-body">
+                <p class="card-text">Une 3ème image de burger.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="second-images-group d-none">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/restaurant-1.png" alt="restaurant picture">
+              <div class="card-body">
+                <p class="card-text">Notre restaurant d'Anvers.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/restaurant-2.png" alt="restaurant picture">
+              <div class="card-body">
+                <p class="card-text">Notre restaurant de Bruxelles.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/restaurant-2.png" alt="restaurant picture">
+              <div class="card-body">
+                <p class="card-text">Notre restaurant de Liège.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="third-images-group d-none">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/burger-4.png" alt="burger picture">
+              <div class="card-body">
+                <p class="card-text">Une 4ème image de burger.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/burger-5.png" alt="burger picture">
+              <div class="card-body">
+                <p class="card-text">Une 5ème image de burger.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/burger-6.png" alt="burger picture">
+              <div class="card-body">
+                <p class="card-text">Une 6ème image de burger.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fourth-images-group d-none">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/restaurant-1.png" alt="restaurant picture">
+              <div class="card-body">
+                <p class="card-text">Notre restaurant d'Anvers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center mt-5">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <div class="container mt-4">
-        <nav aria-label="Navigation page">
-          <ul class="pagination">
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">«</span>
-              </a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">»</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div> 
   </div>
-  
-<!-- Footer -->
-<div class="container">
-    <footer class="row row-cols-1 row-cols-sm-1 row-cols-md-3 py-sm-3 py-lg-5 my-5 border-top text-center">
+  <!-- Footer -->
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-1 row-cols-md-3 py-sm-1 py-lg-3 mt-5 border-top text-center">
       <div class="col mb-1">
         <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
         </a>
         <p class="text-body-secondary">©HTML 2024</p>
       </div>
       <div class="col mb-1">
         <h5>Contact:</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2">Téléphone: 012345678</li>
-          <li class="nav-item mb-2">E-mail: info@html.be</li>
+          <li class="nav-item mb-2">Téléphone: <a href="callto:+320123456789">012345678</a></li>
+          <li class="nav-item mb-2">E-mail: <a href="mailto:info@html.be">info@html.be</a></li>
         </ul>
       </div>
-  
+
       <div class="col mb-1">
         <h5>Sections:</h5>
         <ul class="nav flex-column">
@@ -266,5 +222,18 @@
         </ul>
       </div>
     </footer>
-  </div> 
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJTIeF13H4D1Vtqq0PBChe3h0hHAuKVp4MrqD4Vtst4d8p2Og"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIyMujyM9Jio4OUC8y4Y7RXuCjOWZn1tqg5JUs/i"
+    crossorigin="anonymous"></script>
+  <script src="pagination.js"></script>
 </body>
+
+</html>

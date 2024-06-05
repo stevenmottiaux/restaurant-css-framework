@@ -1,18 +1,21 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css">
   <script defer src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="./styles.css">
-  <title>Bootstrap demo</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/favicon/site.webmanifest">
+  <title>L'HTML - Meilleurs burgers de Belgique - Notre menu</title>
 </head>
 
 <body>
   <!-- Header qui contient le logo et le menu principal -->
-  <nav class="navbar sticky-top navbar-expand-lg bg-body">
+  <nav class="navbar sticky-top navbar-expand-lg bg-body border-bottom">
     <div class="container-fluid">
       <a class="navbar-brand d-block d-lg-none mx-auto" href="#">
         <img src="./assets/images/logo.png" alt="Logo" class="d-block mx-auto">
@@ -29,16 +32,17 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav  mx-auto fs-5 mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Accueil</a>
+            <a class="nav-link" aria-current="page" href="./index.html">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./about.html">A propos</a>
+            <a class="nav-link" aria-current="page" href="./about.html">A propos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./pictures.html">Galerie</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="./menu.html" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+            <a class="nav-link dropdown-toggle active" href="./menu.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="true">
               Notre menu
             </a>
             <ul class="dropdown-menu">
@@ -60,13 +64,6 @@
       </div>
     </div>
   </nav>
-  <!-- Breadcrumb -->
-  <nav class="mt-3 bg-light" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="./index.html">Accueil</a></li>
-      <li class="breadcrumb-item active"><a href="./menu.html">Notre menu</a></li>
-    </ol>
-  </nav>
   <!-- Menu  -->
   <div class=" jumbotron  jumbotron-fluid mt-5">
     <div class="container d-flex flex-column justify-content-center align-items-center">
@@ -82,17 +79,22 @@
         <div class="d-flex gap-2 w-100 justify-content-between">
           <div>
             <h6 class="mb-0">LE DELUXE BACON CHEESEBURGER</h6>
-            <p class="mb-0 opacity-75">Le Deluxe Bacon Cheeseburger devient un résident permanent au HTML. Le plus luxueux de nos Burgers se compose d’un patty de Black Angus irlandais, de Cheddar irlandais et surtout de notre incroyable bacon millionnaire confit au sirop d’érable et à la cassonade !</p>
+            <p class="mb-0 opacity-75">Le Deluxe Bacon Cheeseburger devient un résident permanent au HTML. Le plus
+              luxueux de nos Burgers se compose d’un patty de Black Angus irlandais, de Cheddar irlandais et surtout de
+              notre incroyable bacon millionnaire confit au sirop d’érable et à la cassonade !</p>
           </div>
           <small class="opacity-50 text-nowrap">12€</small>
         </div>
       </a>
       <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-        <img src="./assets/images/burger-badge.png" alt="twbs" width="32" height="32" class="burger-badge rounded-circle flex-shrink-0">
+        <img src="./assets/images/burger-badge.png" alt="twbs" width="32" height="32"
+          class="burger-badge rounded-circle flex-shrink-0">
         <div class="d-flex gap-2 w-100 justify-content-between">
           <div>
             <h6 class="mb-0">COLONEL</h6>
-            <p class="mb-0 opacity-75">On ne le présente plus, le Colonel est au HTML ce que les frites sont au Burger : inséparables ! Sa sauce poivre maison et ses onion rings surplombés d’un œuf à cheval en ont fait une légende du Burger gourmet.</p>
+            <p class="mb-0 opacity-75">On ne le présente plus, le Colonel est au HTML ce que les frites sont au Burger :
+              inséparables ! Sa sauce poivre maison et ses onion rings surplombés d’un œuf à cheval en ont fait une
+              légende du Burger gourmet.</p>
           </div>
           <small class="opacity-50 text-nowrap">15€</small>
         </div>
@@ -102,40 +104,47 @@
         <div class="d-flex gap-2 w-100 justify-content-between">
           <div>
             <h6 class="mb-0">LE BBQ</h6>
-            <p class="mb-0 opacity-75">Un Burger qui s’inspire de vrais barbecues américains, voici le gourmand BBQ. Avec sa sauce BBQ maison fumée et son maïs snacké, c’est un Burger emblématique de la culture US, au goût unique.</p>
+            <p class="mb-0 opacity-75">Un Burger qui s’inspire de vrais barbecues américains, voici le gourmand BBQ.
+              Avec sa sauce BBQ maison fumée et son maïs snacké, c’est un Burger emblématique de la culture US, au goût
+              unique.</p>
           </div>
           <small class="opacity-50 text-nowrap">18€</small>
         </div>
       </a>
       <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-        <img src="./assets/images/burger-badge.png" alt="twbs"class="burger-badge rounded-circle flex-shrink-0">
+        <img src="./assets/images/burger-badge.png" alt="twbs" class="burger-badge rounded-circle flex-shrink-0">
         <div class="d-flex gap-2 w-100 justify-content-between">
           <div>
             <h6 class="mb-0">KID’S CHEESEBURGER</h6>
-            <p class="mb-0 opacity-75">Au HTML, nous avons pensé à vos petits bouts ! Avec notre Kid’s Cheeseburger, vous êtes sûrs de faire bonne impression auprès de votre jury le plus sévère : vos enfants ! Un véritable Burger maison pour les enfants, avec des ingrédients frais et de qualité, et des frites ou compote à volonté : ils vont adorer autant que vous !</p>
+            <p class="mb-0 opacity-75">Au HTML, nous avons pensé à vos petits bouts ! Avec notre Kid’s Cheeseburger,
+              vous êtes sûrs de faire bonne impression auprès de votre jury le plus sévère : vos enfants ! Un véritable
+              Burger maison pour les enfants, avec des ingrédients frais et de qualité, et des frites ou compote à
+              volonté : ils vont adorer autant que vous !</p>
           </div>
           <small class="opacity-50 text-nowrap">10€</small>
         </div>
       </a>
     </div>
   </div>
-<!-- Footer -->
-<div class="container">
-    <footer class="row row-cols-1 row-cols-sm-1 row-cols-md-3 py-sm-3 py-lg-5 my-5 border-top text-center">
+  <!-- Footer -->
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-1 row-cols-md-3 py-sm-1 py-lg-3 mt-5 border-top text-center">
       <div class="col mb-1">
         <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
         </a>
         <p class="text-body-secondary">©HTML 2024</p>
       </div>
       <div class="col mb-1">
         <h5>Contact:</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2">Téléphone: 012345678</li>
-          <li class="nav-item mb-2">E-mail: info@html.be</li>
+          <li class="nav-item mb-2">Téléphone: <a href="callto:+320123456789">012345678</a></li>
+          <li class="nav-item mb-2">E-mail: <a href="mailto:info@html.be">info@html.be</a></li>
         </ul>
       </div>
-  
+
       <div class="col mb-1">
         <h5>Sections:</h5>
         <ul class="nav flex-column">
@@ -147,5 +156,5 @@
         </ul>
       </div>
     </footer>
-  </div> 
+  </div>
 </body>

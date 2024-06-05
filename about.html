@@ -1,17 +1,19 @@
 <!doctype html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css">
     <script defer src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./styles.css">
-    <title>Bootstrap demo</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <title>L'HTML - Meilleurs burgers de Belgique - A propos</title>
 </head>
-
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg bg-body">
+    <nav class="navbar sticky-top navbar-expand-lg bg-body border-bottom">
         <div class="container-fluid">
             <a class="navbar-brand d-block d-lg-none mx-auto" href="#">
                 <img src="./assets/images/logo.png" alt="Logo" class="d-block mx-auto">
@@ -29,7 +31,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav  mx-auto fs-5 mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Accueil</a>
+                        <a class="nav-link" aria-current="page" href="./index.html">Accueil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./about.html">A propos</a>
@@ -61,122 +63,75 @@
             </div>
         </div>
     </nav>
-    <!-- Breadcrumb -->
-    <nav class="mt-3 bg-light" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item active"><a href="#">Accueil</a></li>
-            <li class="breadcrumb-item"><a href="#">A propos</a></li>
-        </ol>
-    </nav>
+
     <!-- Jumbotron -->
     <div class=" jumbotron  jumbotron-fluid my-5 ">
         <div class="container d-flex flex-column justify-content-center align-items-center">
-            <h1 class="display-5 lg-display-4 text-nowrap">L'HTML - L'Hyper Tasty MeaL</h1>
+            <h1 class="display-5 lg-display-4 text-nowrap">L'HTML - L'<element class="red-letter">H</element>yper
+                <element class="red-letter">T</element>asty <element class="red-letter">M</element>ea<element
+                    class="red-letter">L</element>
+            </h1>
             <p class="lead">Découvrez toutes nos adresses où se régaler !</p>
         </div>
     </div>
     <!-- Adresses des restaurants-->
-    <div class="container px-4 bg-light" id="custom-cards">
-        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-            <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                    style="background-image: url('unsplash-photo-1.jpg');">
-                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Anvers</h3>
-                        <ul class="d-flex list-unstyled mt-auto">
-                            <li class="me-auto">
-                                <img src="./assets/images/burger-badge.png" alt="Badge Burger"
-                                    class="burger-badge rounded-circle border border-white">
-                            </li>
-                            <li class="d-flex align-items-center me-3">
-                                <svg class="bi me-2" width="1em" height="1em">
-                                    <use xlink:href="#geo-fill"></use>
-                                </svg>
-                                <small>Santiagostraat 3, 2030 Antwerpen</small>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <small>9h30 - 12h30</small>
-                                <small>13h30 - 22h</small>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                    style="background-image: url('unsplash-photo-2.jpg');">
-                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Bruxelles</h3>
-                        <ul class="d-flex list-unstyled mt-auto">
-                            <li class="me-auto">
-                                <img src="./assets/images/burger-badge.png" alt="Badge Burger"
-                                    class="burger-badge rounded-circle border border-white">
-                            </li>
-                            <li class="d-flex align-items-center me-3">
-                                <svg class="bi me-2" width="1em" height="1em">
-                                    <use xlink:href="#geo-fill"></use>
-                                </svg>
-                                <small>Cantersteen 12, 1000 Bruxelles</small>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <svg class="bi me-2" width="1em" height="1em">
-                                    <use xlink:href="#calendar3"></use>
-                                </svg>
-                                <small>9h30 - 12h30</small>
-                                <small>13h30 - 22h</small>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                    style="background-image: url('unsplash-photo-3.jpg');">
-                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Liège</h3>
-                        <ul class="d-flex list-unstyled mt-auto">
-                            <li class="me-auto">
-                                <img src="./assets/images/burger-badge.png" alt="Badge Burger"
-                                    class="burger-badge rounded-circle border border-white">
-                            </li>
-                            <li class="d-flex align-items-center me-3">
-                                <svg class="bi me-2" width="1em" height="1em">
-                                    <use xlink:href="#geo-fill"></use>
-                                </svg>
-                                <small>Rue des Guillemins 2, 4000 Liège</small>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <svg class="bi me-2" width="1em" height="1em">
-                                    <use xlink:href="#calendar3"></use>
-                                </svg>
-                                <small>9h30 - 12h30</small>
-                                <small>13h30 - 22h</small>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <div class="row gap-4 d-flex align-items-center flex-nowrap flex-column flex-sm-column flex-md-column flex-lg-row">
+        <div class="adresses-box-borders d-flex flex-column align-items-center  col-6 col-md-4">
+            <h3>Anvers</h3>
+            <h4>Horaires:</h4>
+            <ul>
+                <li>Du lundi au vendredi : 10h-22h</li>
+                <li>Le samedi : 12h-23h</li>
+            </ul>
+            <div style="width: 100%"><iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0"
+                    marginwidth="0"
+                    src="https://maps.google.com/maps?width=300&amp;height=300&amp;hl=en&amp;q=Santiagostraat%203,%202030%20Antwerpen+(L'HTML)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                        href="https://www.gps.ie/">gps vehicle tracker</a></iframe></div>
+        </div>
+        <div class="d-flex flex-column align-items-center adresses-box-borders col-6 col-md-4">
+            <h3>Bruxelles</h3>
+            <h4>Horaires:</h4>
+            <ul>
+                <li>Du lundi au vendredi : 10h-22h</li>
+                <li>Le samedi : 12h-23h</li>
+            </ul>
+            <div style="width: 100%"><iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0"
+                    marginwidth="0"
+                    src="https://maps.google.com/maps?width=300&amp;height=300&amp;hl=en&amp;q=Cantersteen%2012,%201000%20Bruxelles+(L'HTML)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                        href="https://www.gps.ie/">gps tracker sport</a></iframe></div>
+        </div>
+        <div class="d-flex flex-column align-items-center adresses-box-borders col-6 col-md-4">
+            <h3>Liège</h3>
+            <h4>Horaires:</h4>
+            <ul>
+                <li>Du lundi au vendredi : 10h-22h</li>
+                <li>Le samedi : 12h-23h</li>
+            </ul>
+            <div style="width: 100%"><iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0"
+                    marginwidth="0"
+                    src="https://maps.google.com/maps?width=300&amp;height=300&amp;hl=en&amp;q=Rue%20des%20Guillemins%202,%204000%20Li%C3%A8ge+(L'HTML)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                        href="https://www.gps.ie/">gps trackers</a></iframe></div>
         </div>
     </div>
-    <!-- Footer -->
+  <!-- Footer -->
   <div class="container">
-    <footer class="row row-cols-1 row-cols-sm-1 row-cols-md-3 py-sm-3 py-lg-5 my-5 border-top text-center">
+    <footer class="row row-cols-1 row-cols-sm-1 row-cols-md-3 py-sm-1 py-lg-3 mt-5 border-top text-center">
       <div class="col mb-1">
         <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
         </a>
         <p class="text-body-secondary">©HTML 2024</p>
       </div>
       <div class="col mb-1">
         <h5>Contact:</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2">Téléphone: 012345678</li>
-          <li class="nav-item mb-2">E-mail: info@html.be</li>
+          <li class="nav-item mb-2">Téléphone: <a href="callto:+320123456789">012345678</a></li>
+          <li class="nav-item mb-2">E-mail: <a href="mailto:info@html.be">info@html.be</a></li>
         </ul>
       </div>
-  
+
       <div class="col mb-1">
         <h5>Sections:</h5>
         <ul class="nav flex-column">
@@ -188,7 +143,6 @@
         </ul>
       </div>
     </footer>
-  </div> 
+  </div>
 </body>
-
 </html>

@@ -7,65 +7,67 @@
   <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css">
   <script defer src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="./styles.css">
-  <title>Bootstrap demo</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/favicon/site.webmanifest">
+  <title>L'HTML - Meilleurs burgers de Belgique</title>
 </head>
 
 <body>
   <!-- Header qui contient le logo et le menu principal -->
-  <nav class="navbar sticky-top navbar-expand-lg bg-body">
-    <div class="container-fluid">
-      <a class="navbar-brand d-block d-lg-none mx-auto" href="./index.html">
-        <img src="./assets/images/logo.png" alt="Logo" class="d-block mx-auto">
-      </a>
-      <a class="navbar-brand d-none d-lg-block" href="./index.html">
-        <img src="./assets/images/logo.png" alt="Logo">
-      </a>
-      <div class="d-inline">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <header class="sticky-top" id="header">
+    <nav class="navbar sticky-top navbar-expand-lg bg-body border-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand d-block d-lg-none mx-auto" href="./index.html">
+          <img src="./assets/images/logo.png" alt="Logo" class="d-block mx-auto">
+        </a>
+        <a class="header-linksnavbar-brand d-none d-lg-block" href="./index.html">
+          <img src="./assets/images/logo.png" alt="Logo">
+        </a>
+        <div class="d-inline">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  mx-auto fs-5 mb-2 mb-lg-0 w-fit-content-sm">
+            <li class="nav-item">
+              <a class="nav-link active header-links" aria-current="page" href="./index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./about.html">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pictures.html">Galerie</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./menu.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="true">
+                Notre menu
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./menu.html">Burgers végétariens</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./menu.html">Burgers classiques</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./menu.html">Burgers spéciaux</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav  mx-auto fs-5 mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./about.html">A propos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pictures.html">Galerie</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="./menu.html" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-              Notre menu
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./menu.html">Burgers végétariens</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="./menu.html">Burgers classiques</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="./menu.html">Burgers spéciaux</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- Breadcrumb -->
-  <nav class="mt-3 bg-light" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item active"><a href="#">Accueil</a></li>
-    </ol>
-  </nav>
+    </nav>
+  </header>
   <!-- Carousel du dessus de la page -->
   <div id="carouselExampleIndicators" class="carousel slide w-70">
     <div class="carousel-indicators">
@@ -99,9 +101,12 @@
     </button>
   </div>
   <!-- Jumbotron -->
-  <div class=" jumbotron  jumbotron-fluid my-5 ">
+  <div class=" jumbotron  jumbotron-fluid my-5">
     <div class="container d-flex flex-column justify-content-center align-items-center">
-      <h1 class="display-5 lg-display-4 text-nowrap">L'HTML - L'Hyper Tasty MeaL</h1>
+      <h1 class="fs-1 lg-display-4 text-nowrap">L'HTML - L'<element class="red-letter">H</element>yper <element
+          class="red-letter">T</element>asty <element class="red-letter">M</element>ea<element class="red-letter">L
+        </element>
+      </h1>
       <p class="lead">Venez savourer l'un de nos nombreux délicieux burger et comprenez pourquoi nous sommes les numéros
         1 ! </p>
     </div>
@@ -111,47 +116,10 @@
     <div class="row news-title text-center my-3 bg-light">
       <h2>Notre <element class="italic">"savoureuse"</element> actualité &#x1F60B;</h2>
     </div>
-    <div class="row justify-content-center column-gap-5 row-gap-3 mt-3 mb-5">
-      <div class="col-6 card mx-1" style="width: 18rem;">
-        <img src="./assets/images/hamburger.jpg" class="card-img-top" alt="...">
-        <div class="d-flex flex-column card-body justify-content-evenly">
-          <h5 class="card-title">50% de réduction sur le deuxième burger</h5>
-          <p class="card-text">Achetez un deuxième bruger sur notre carte et recevez 50% de réduction sur celui-ci
-            content.</p>
-        </div>
-        <div class="d-flex justify-content-center">
-          <button type="button" class="btn btn-outline-primary ">COMMANDER !</button>
-        </div>
-      </div>
-      <div class="col-6 card mx-1" style="width: 18rem;">
-        <img src="./assets/images/hamburger.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Notre act</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-        </div>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- Carousel qui ne s'affiche seulement qu'en small screen et extra-small screen -->
-  <div id="carouselExampleIndicators" class="carousel slide d-md-none d-lg-none bg-black">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-    </div>
-    <div class="row news-title text-center my-3">
-      <h2>Notre <element class="italic">"savoureuse"</element> actualité &#x1F60B;</h2>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="card mx-1" style="width: 18rem;">
-          <img src="./assets/images/hamburger.jpg" class="card-img-top" alt="Burger">
+    <div class="row d-flex flex-row justify-content-center column-gap-5 row-gap-3 my-5">
+      <div class="col-3">
+        <div class="card my-auto mx-auto" style="width: 18rem;">
+          <img src="./assets/images/discount.png" class="card-img-top" alt="discount image">
           <div class="d-flex flex-column card-body justify-content-evenly">
             <h5 class="card-title">50% de réduction sur le deuxième burger</h5>
             <p class="card-text">Achetez un deuxième burger sur notre carte et recevez 50% de réduction sur celui-ci.
@@ -162,12 +130,12 @@
           </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <div class="card mx-1" style="width: 18rem;">
-          <img src="./assets/images/hamburger.jpg" class="card-img-top" alt="Burger">
+      <div class="col-3">
+        <div class="card my-auto mx-auto" style="width: 18rem;">
+          <img src="./assets/images/approved.png" class="card-img-top" alt="discount image">
           <div class="d-flex flex-column card-body justify-content-evenly">
-            <h5 class="card-title">0% de réduction sur le deuxième burger</h5>
-            <p class="card-text">Achetez un deuxième burger sur notre carte et recevez 50% de réduction sur celui-ci.
+            <h5 class="card-title">On est approuvé par JCVD lui-même !</h5>
+            <p class="card-text">JCVD lui même a approuvé nos burgers ! Dans 20-30 ans y'en aura .. encore !
             </p>
           </div>
           <div class="d-flex justify-content-center">
@@ -176,12 +144,55 @@
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+  </div>
+  <!-- Carousel qui ne s'affiche seulement qu'en small screen et extra-small screen -->
+  <div id="carouselEvents" class=" carousel slide d-md-none d-lg-none border-top" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+    </div>
+    <div class="row news-title text-center my-3">
+      <h2>Notre <span class="italic">"savoureuse"</span> actualité &#x1F60B;</h2>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-center w-100">
+          <div class="card mx-1" style="width: 18rem;">
+            <img src="./assets/images/discount.png" class="card-img-top" alt="discount image">
+            <div class="d-flex flex-column card-body justify-content-evenly">
+              <h5 class="card-title">50% de réduction sur le deuxième burger</h5>
+              <p class="card-text">Achetez un deuxième burger sur notre carte et recevez 50% de réduction sur celui-ci.
+              </p>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-outline-primary">COMMANDER !</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center w-100">
+          <div class="card mx-1" style="width: 18rem;">
+            <img src="./assets/images/approved.png" class="card-img-top" alt="approved image">
+            <div class="d-flex flex-column card-body justify-content-evenly">
+              <h5 class="card-title">JCVD approved </h5>
+              <p class="card-text">JCVD lui même a approuvé nos burgers ! Dans 20-30 ans y'en aura .. encore !</p>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-outline-primary">COMMANDER !</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselEvents"
       data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselEvents"
       data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
@@ -189,21 +200,23 @@
   </div>
   <!-- Footer -->
   <div class="container">
-    <footer class="row row-cols-1 row-cols-sm-1 row-cols-md-3 py-sm-3 py-lg-5 my-5 border-top text-center">
+    <footer class="row row-cols-1 row-cols-sm-1 row-cols-md-3 py-sm-1 py-lg-3 mt-5 border-top text-center">
       <div class="col mb-1">
         <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
         </a>
         <p class="text-body-secondary">©HTML 2024</p>
       </div>
       <div class="col mb-1">
         <h5>Contact:</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2">Téléphone: 012345678</li>
-          <li class="nav-item mb-2">E-mail: info@html.be</li>
+          <li class="nav-item mb-2">Téléphone: <a href="callto:+320123456789">012345678</a></li>
+          <li class="nav-item mb-2">E-mail: <a href="mailto:info@html.be">info@html.be</a></li>
         </ul>
       </div>
-  
+
       <div class="col mb-1">
         <h5>Sections:</h5>
         <ul class="nav flex-column">
@@ -215,6 +228,7 @@
         </ul>
       </div>
     </footer>
-  </div> 
+  </div>
 </body>
+
 </html>

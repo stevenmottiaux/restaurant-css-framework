@@ -7,11 +7,16 @@
   <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css">
   <script defer src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="./styles.css">
-  <title>Bootstrap demo</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/favicon/site.webmanifest">
+  <title>L'HTML - Meilleurs burgers de Belgique - Contact</title>
 </head>
+
 <body>
- <!-- Header qui contient le logo et le menu principal -->
- <nav class="navbar sticky-top navbar-expand-lg bg-body">
+  <!-- Header qui contient le logo et le menu principal -->
+  <nav class="navbar sticky-top navbar-expand-lg bg-body border-bottom">
     <div class="container-fluid">
       <a class="navbar-brand d-block d-lg-none mx-auto" href="#">
         <img src="./assets/images/logo.png" alt="Logo" class="d-block mx-auto">
@@ -28,16 +33,17 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav  mx-auto fs-5 mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Accueil</a>
+            <a class="nav-link" aria-current="page" href="./index.html">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./about.html">A propos</a>
+            <a class="nav-link" aria-current="page" href="./about.html">A propos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./pictures.html">Galerie</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="./menu.html" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+            <a class="nav-link dropdown-toggle" href="./menu.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="true">
               Notre menu
             </a>
             <ul class="dropdown-menu">
@@ -53,26 +59,20 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Contact</a>
+            <a class="nav-link active" href="./contact.html">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- Breadcrumb -->
-  <nav class="mt-3 bg-light" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-    <ol class="breadcrumb mb-0">
-      <li class="breadcrumb-item active"><a href="#">Accueil</a></li>
-      <li class="breadcrumb-item"><a href="#">Contact</a></li>
-    </ol>
-  </nav>
-<!-- Jumbotron avant le formulaire de contact -->
+  <!-- Jumbotron avant le formulaire de contact -->
   <div class="">
     <div class="p-5 text-center bg-body-tertiary">
       <div class="container py-5">
         <h1 class="text-body-emphasis">Une question ? Un commentaire ?</h1>
         <p class="col-lg-8 mx-auto lead">
-          Remplissez le formulaire de contact ci-dessous et notre super équipe vous recontactera dans les plus brefs délais.
+          Remplissez le formulaire de contact ci-dessous et notre super équipe vous recontactera dans les plus brefs
+          délais.
         </p>
       </div>
     </div>
@@ -89,42 +89,43 @@
       <input type="text" class="form-control" id="exampleInputLastName">
     </div>
     <div class="mb-3">
-        <label for="exampleInputLastName" class="form-label">Prénom</label>
-        <input type="text" class="form-control" id="exampleInputLastName">
+      <label for="exampleInputLastName" class="form-label">Prénom</label>
+      <input type="text" class="form-control" id="exampleInputLastName">
     </div>
     <div class="mb-3">
-        <label for="exampleDataList" class="form-label">Sujet</label>
-        <select class="form-select" aria-label="exampleDataList">
-            <option selected>Choisir un sujet</option>
-            <option value="1">Réservation</option>
-            <option value="2">Question</option>
-            <option value="3">Commentaire</option>
-            <option value="4">Autres</option>
-          </select>
+      <label for="exampleDataList" class="form-label">Sujet</label>
+      <select class="form-select" aria-label="exampleDataList">
+        <option selected>Choisir un sujet</option>
+        <option value="1">Réservation</option>
+        <option value="2">Question</option>
+        <option value="3">Commentaire</option>
+        <option value="4">Autres</option>
+      </select>
     </div>
     <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-        <textarea class="form-control" rows="5" data-np-intersection-state="visible"></textarea>
+      <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+      <textarea class="form-control" rows="5" data-np-intersection-state="visible"></textarea>
     </div>
     <button type="submit" class="btn btn-primary mx-auto">ENVOYER</button>
   </form>
   <!-- Footer -->
   <div class="container">
-    <footer class="row row-cols-1 row-cols-sm-1 row-cols-md-3 py-sm-3 py-lg-5 my-5 border-top text-center">
+    <footer class="row row-cols-1 row-cols-sm-1 row-cols-md-3 py-sm-1 py-lg-3 mt-5 border-top text-center">
       <div class="col mb-1">
         <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
         </a>
         <p class="text-body-secondary">©HTML 2024</p>
       </div>
       <div class="col mb-1">
         <h5>Contact:</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2">Téléphone: 012345678</li>
-          <li class="nav-item mb-2">E-mail: info@html.be</li>
+          <li class="nav-item mb-2">Téléphone: <a href="callto:+320123456789">012345678</a></li>
+          <li class="nav-item mb-2">E-mail: <a href="mailto:info@html.be">info@html.be</a></li>
         </ul>
       </div>
-  
       <div class="col mb-1">
         <h5>Sections:</h5>
         <ul class="nav flex-column">
@@ -136,6 +137,6 @@
         </ul>
       </div>
     </footer>
-  </div> 
+  </div>
 </body>
 </html>

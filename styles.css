@@ -25,3 +25,24 @@ body {
     height: 40px;
     width: 40px;
 }
+
+.breadcrumb-link {
+    text-decoration: none;
+}
+
+.adresses-box-borders {
+    border: 1px solid rgb(143, 118, 118);
+}
+
+.red-letter {
+    color: red;
+}
+
+a .active {
+    text-decoration: underline;
+}
+
+.nav-link.active {
+ text-decoration: underline;
+ color: red !important; /* Utilisez !important pour forcer le style */
+}
