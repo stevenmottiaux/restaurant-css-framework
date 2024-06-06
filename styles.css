@@ -10,6 +10,7 @@
 
 body {
     font-family: "Concert One" !important;
+    overflow-x: hidden;
     width: 100%;
 }
 
@@ -17,9 +18,17 @@ body {
     background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
 }
 
-.news {
 
+.news-title {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
 }
+
+.news .row {
+    margin: 0;
+    padding: 0;
+  }
 
 .italic {
     font-style: italic;
@@ -53,4 +62,10 @@ a .active {
 .nav-link.active {
  text-decoration: underline;
  color: red !important; /* Utilisez !important pour forcer le style */
+}
+
+.underline-radient {
+    border-bottom: 5px solid transparent;
+	border-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+	border-image-slice: 1;
 }
