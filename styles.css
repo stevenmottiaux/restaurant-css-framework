@@ -12,9 +12,11 @@ body {
     font-family: "Concert One" !important;
     overflow-x: hidden;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.header, .news, .album {
+.header {
     background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
 }
 
@@ -69,3 +71,6 @@ a .active {
 	border-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
 	border-image-slice: 1;
 }
+
+
+
