@@ -16,8 +16,8 @@
 
 <body>
   <!-- Header qui contient le logo et le menu principal -->
-  <header class="sticky-top" id="header">
-    <nav class="navbar sticky-top navbar-expand-lg bg-body border-bottom">
+  <header class="header sticky-top">
+    <nav class="navbar sticky-top navbar-expand-lg border-bottom">
       <div class="container-fluid">
         <a class="navbar-brand d-block d-lg-none mx-auto" href="./index.html">
           <img src="./assets/images/logo.png" alt="Logo" class="d-block mx-auto">
@@ -33,7 +33,7 @@
           </button>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav  mx-auto fs-5 mb-2 mb-lg-0 w-fit-content-sm">
+          <ul class="navbar-nav text-center mx-auto fs-5 mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active header-links" aria-current="page" href="./index.html">Accueil</a>
             </li>
@@ -111,12 +111,37 @@
         1 ! </p>
     </div>
   </div>
+  <!-- Section infos-->
+  <!--Info producteur locaux-->
+  <div class="container col-xxl-8 px-4 py-5 border-top">
+    <div class="row flex-lg-row-reverse justify-content-center align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="./assets/images/locals.png" class="d-block mx-lg-auto img-fluid" alt="belgium-image" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6 text-center text-md-start">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Nous travaillons avec les <span class="red-letter">producteurs locaux belges</span></h1>
+        <p class="lead">Chez nous, chaque hamburger est préparé avec des ingrédients frais et de qualité, issus de producteurs locaux belges. Nous collaborons étroitement avec des fermes et artisans de la région pour garantir des produits authentiques et savoureux. En choisissant nos burgers, vous soutenez l'agriculture locale et savourez le meilleur de la Belgique.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Info meilleur service-->
+  <div class="container col-xxl-8 px-4 py-5 border-top">
+    <div class="row flex-lg-row align-items-center justify-content-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="./assets/images/service.png" class="d-block mx-lg-auto img-fluid" alt="belgium-image" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6 text-center text-md-start">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Notre équipe est la meilleure... <span class="red-letter">pour vous</span> !</h1>
+        <p class="lead">Notre équipe dévouée s'engage à offrir une expérience culinaire exceptionnelle à chaque visite. Avec un service chaleureux et attentionné, nous faisons de la satisfaction de nos clients notre priorité absolue. Venez découvrir pourquoi notre équipe est la meilleure pour vous servir!</p>
+      </div>
+    </div>
+  </div>
   <!-- Section qui comporte les deux cards, ne s'affiche qu'en medium screen et + -->
-  <div class="news d-none d-md-block d-flex flex-column justify-content-center bg-light">
-    <div class="row news-title text-center my-3 bg-light">
+  <div class="news d-none d-md-block d-flex flex-column justify-content-center">
+    <div class="row news-title text-center">
       <h2>Notre <element class="italic">"savoureuse"</element> actualité &#x1F60B;</h2>
     </div>
-    <div class="row d-flex flex-row justify-content-center column-gap-5 row-gap-3 my-5">
+    <div class="row d-flex flex-row justify-content-center column-gap-5 mt-4 row-gap-3">
       <div class="col-3">
         <div class="card my-auto mx-auto" style="width: 18rem;">
           <img src="./assets/images/discount.png" class="card-img-top" alt="discount image">
@@ -126,7 +151,7 @@
             </p>
           </div>
           <div class="d-flex justify-content-center">
-            <button type="button" class="btn btn-outline-primary">COMMANDER !</button>
+            <a class="btn btn-outline-danger" href="./contact.html" role="button">COMMANDER</a>
           </div>
         </div>
       </div>
@@ -139,7 +164,7 @@
             </p>
           </div>
           <div class="d-flex justify-content-center">
-            <button type="button" class="btn btn-outline-primary">COMMANDER !</button>
+            <a class="btn btn-outline-danger" href="./contact.html" role="button">COMMANDER</a>
           </div>
         </div>
       </div>
@@ -167,7 +192,7 @@
               </p>
             </div>
             <div class="d-flex justify-content-center">
-              <button type="button" class="btn btn-outline-primary">COMMANDER !</button>
+              <button type="button" class="btn btn-outline-danger">COMMANDER !</button>
             </div>
           </div>
         </div>
@@ -181,7 +206,7 @@
               <p class="card-text">JCVD lui même a approuvé nos burgers ! Dans 20-30 ans y'en aura .. encore !</p>
             </div>
             <div class="d-flex justify-content-center">
-              <button type="button" class="btn btn-outline-primary">COMMANDER !</button>
+              <button type="button" class="btn btn-outline-danger">COMMANDER !</button>
             </div>
           </div>
         </div>
@@ -200,7 +225,7 @@
   </div>
   <!-- Footer -->
   <div class="container">
-    <footer class="row row-cols-1 row-cols-sm-1 row-cols-md-3 py-sm-1 py-lg-3 mt-5 border-top text-center">
+    <footer class="row row-cols-1 row-cols-sm-1 row-cols-md-3 py-sm-1 py-lg-3 border-top text-center">
       <div class="col mb-1">
         <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
           <svg class="bi me-2" width="40" height="32">

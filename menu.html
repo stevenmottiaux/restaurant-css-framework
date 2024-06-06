@@ -15,7 +15,8 @@
 
 <body>
   <!-- Header qui contient le logo et le menu principal -->
-  <nav class="navbar sticky-top navbar-expand-lg bg-body border-bottom">
+  <header class="header sticky-top">
+  <nav class="navbar sticky-top navbar-expand-lg border-bottom">
     <div class="container-fluid">
       <a class="navbar-brand d-block d-lg-none mx-auto" href="#">
         <img src="./assets/images/logo.png" alt="Logo" class="d-block mx-auto">
@@ -30,7 +31,7 @@
         </button>
       </div>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav  mx-auto fs-5 mb-2 mb-lg-0">
+        <ul class="navbar-nav mx-auto fs-5 mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="./index.html">Accueil</a>
           </li>
@@ -46,7 +47,7 @@
               Notre menu
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./menu.html">Burgers végétariens</a></li>
+              <li><a class="dropdown-item" href="#vegie-menu">Burgers végétariens</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
@@ -54,7 +55,7 @@
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="./menu.html">Burgers spéciaux</a></li>
+              <li><a class="dropdown-item" href="#specials-menu">Burgers spéciaux</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -64,15 +65,17 @@
       </div>
     </div>
   </nav>
+</header>
   <!-- Menu  -->
   <div class=" jumbotron  jumbotron-fluid mt-5">
     <div class="container d-flex flex-column justify-content-center align-items-center">
       <h1 class="display-5 text-nowrap">Notre délicieux menu pour petits et grands !</h1>
-      <p class="lead">Venez savourer l'un de nos nombreux délicieux burger et comprenez pourquoi nous sommes les numéros
-        1 ! </p>
+      <h2 class="fs-2 text-center">Venez savourer l'un de nos nombreux délicieux burger et comprenez pourquoi nous sommes <span class="red-letter">les numéros 1</span> !</h2>
     </div>
   </div>
-  <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+  <!-- Menu burgers spéciaux-->
+  <div id="specials-menu" class=" d-flex flex-column flex-md-column p-4 gap-4 py-md-5 m-auto justify-content-center">
+    <div class="menu-section-title text-center"><h5>Les spéciaux</h5></div>
     <div class="list-group">
       <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
         <img src="./assets/images/burger-badge.png" alt="twbs" class="burger-badge rounded-circle flex-shrink-0">
@@ -120,6 +123,53 @@
               vous êtes sûrs de faire bonne impression auprès de votre jury le plus sévère : vos enfants ! Un véritable
               Burger maison pour les enfants, avec des ingrédients frais et de qualité, et des frites ou compote à
               volonté : ils vont adorer autant que vous !</p>
+          </div>
+          <small class="opacity-50 text-nowrap">10€</small>
+        </div>
+      </a>
+    </div>
+  </div>
+  <!-- Menu burgers végétariens-->
+  <div id="vegie-menu" class="d-flex flex-column flex-md-column p-4 gap-4 py-md-5 justify-content-center">
+    <div class="menu-section-title text-center"><h5>Les végétariens</h5></div>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        <img src="./assets/images/burger-badge.png" alt="twbs" class="burger-badge rounded-circle flex-shrink-0">
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h6 class="mb-0">Le Veggie classique</h6>
+            <p class="mb-0 opacity-75">Un burger savoureux avec une galette de légumes grillés, du fromage fondant, et des légumes frais.</p>
+          </div>
+          <small class="opacity-50 text-nowrap">12€</small>
+        </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        <img src="./assets/images/burger-badge.png" alt="twbs" width="32" height="32"
+          class="burger-badge rounded-circle flex-shrink-0">
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h6 class="mb-0">Le champignon gourmet</h6>
+            <p class="mb-0 opacity-75">Un burger garni de champignons portobello marinés, d'oignons caramélisés et de fromage de chèvre.</p>
+          </div>
+          <small class="opacity-50 text-nowrap">15€</small>
+        </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        <img src="./assets/images/burger-badge.png" alt="twbs" class="burger-badge rounded-circle flex-shrink-0">
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h6 class="mb-0">Le falafel fraîcheur</h6>
+            <p class="mb-0 opacity-75">Un burger aux falafels croquants, servi avec une sauce tzatziki et des crudités croquantes.</p>
+          </div>
+          <small class="opacity-50 text-nowrap">18€</small>
+        </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        <img src="./assets/images/burger-badge.png" alt="twbs" class="burger-badge rounded-circle flex-shrink-0">
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h6 class="mb-0">Le quinoa délicieux</h6>
+            <p class="mb-0 opacity-75">Un burger à base de quinoa et de patates douces, accompagné d'avocat crémeux et de laitue croquante.</p>
           </div>
           <small class="opacity-50 text-nowrap">10€</small>
         </div>

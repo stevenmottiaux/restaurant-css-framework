@@ -8,9 +8,17 @@
 }
 
 
-
 body {
     font-family: "Concert One" !important;
+    width: 100%;
+}
+
+.header, .news, .album {
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+
+.news {
+
 }
 
 .italic {
