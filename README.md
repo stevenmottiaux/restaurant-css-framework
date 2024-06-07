@@ -14,7 +14,7 @@ Ce projet a été réalisé à l'aide de la librairie Bootstrap. Ce projet compo
 
 ### Page Accueil &#x1F3E0; : 
 
-Cette page comporte un carousel comportant plusieurs images, un jumbotron qui annonce le nom de la marque et une partie actualité composée de deux cartes. A noter que ces deux cartes disposées l'une à coté de l'autre sur les "medium et large screen" se transforment en un "carousel" sur les "small screens".
+Cette page comporte un carousel comportant plusieurs images, un jumbotron qui annonce le nom de la marque et une partie actualité composée de deux cartes. Il y'a aussi deux sections qui expliquent les points forts des restaurants L'HTML. A noter que les deux cartes qui sont disposées l'une à coté de l'autre sur les "medium et large screen" se transforment en un "carousel" sur les "small screens".
 
 ### Page A propos &#x231A;:
 
