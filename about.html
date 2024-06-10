@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,61 +11,63 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <script src="https://kit.fontawesome.com/5073b27f18.js" crossorigin="anonymous"></script>
     <title>L'HTML - Meilleurs burgers de Belgique - A propos</title>
 </head>
+
 <body>
-<header class="header sticky-top">
-    <nav class="navbar sticky-top navbar-expand-lg border-bottom">
-        <div class="container-fluid">
-            <a class="navbar-brand d-block d-lg-none mx-auto" href="#">
-                <img src="./assets/images/logo.png" alt="Logo" class="d-block mx-auto">
-            </a>
-            <a class="navbar-brand d-none d-lg-block" href="#">
-                <img src="./assets/images/logo.png" alt="Logo">
-            </a>
-            <div class="d-inline">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <header class="header sticky-top">
+        <nav class="navbar sticky-top navbar-expand-lg border-bottom">
+            <div class="container-fluid">
+                <a class="navbar-brand d-block d-lg-none mx-auto" href="#">
+                    <img src="./assets/images/logo.png" alt="Logo" class="d-block mx-auto">
+                </a>
+                <a class="navbar-brand d-none d-lg-block" href="#">
+                    <img src="./assets/images/logo.png" alt="Logo">
+                </a>
+                <div class="d-inline">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-center mx-auto fs-5 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./about.html">A propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pictures.html">Galerie</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./menu.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="true">
+                                Notre menu
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./menu.html#vegie-menu">Burgers végétariens</a></li>
+                                <li>
+                                  <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./menu.html#classic-menu">Burgers classiques</a></li>
+                                <li>
+                                  <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./menu.html#specials-menu">Burgers spéciaux</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav text-center mx-auto fs-5 mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./index.html">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./about.html">A propos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pictures.html">Galerie</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="./menu.html" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="true">
-                            Notre menu
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./menu.html">Burgers végétariens</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="./menu.html">Burgers classiques</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="./menu.html">Burgers spéciaux</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
     <!-- Jumbotron -->
     <div class=" jumbotron  jumbotron-fluid my-5 ">
         <div class="container d-flex flex-column justify-content-center align-items-center">
@@ -76,7 +79,8 @@
         </div>
     </div>
     <!-- Adresses des restaurants-->
-    <div class="row container row-gap-2 column-gap-2 align-items-center d-flex mx-auto flex-nowrap flex-column flex-sm-column flex-md-column flex-lg-row">
+    <div
+        class="row container row-gap-2 column-gap-2 align-items-center d-flex mx-auto flex-nowrap flex-column flex-sm-column flex-md-column flex-lg-row">
         <div class="adresses-box-borders d-flex flex-column align-items-center col-8 col-md-4 col-lg-4">
             <h3>Anvers</h3>
             <h4>Horaires:</h4>
@@ -114,37 +118,42 @@
                         href="https://www.gps.ie/">gps trackers</a></iframe></div>
         </div>
     </div>
-  <!-- Footer -->
-  <div class="container">
-    <footer class="row row-cols-1 row-cols-sm-1 row-cols-md-3 py-sm-1 py-lg-3 mt-5 border-top text-center">
-      <div class="col mb-1">
-        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-          <svg class="bi me-2" width="40" height="32">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-        </a>
-        <p class="text-body-secondary">©HTML 2024</p>
-      </div>
-      <div class="col mb-1">
-        <h5>Contact:</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">Téléphone: <a href="callto:+320123456789">012345678</a></li>
-          <li class="nav-item mb-2">E-mail: <a href="mailto:info@html.be">info@html.be</a></li>
-        </ul>
-      </div>
+    <!-- Footer -->
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-1 row-cols-md-3 py-sm-1 py-lg-3 mt-5 border-top text-center">
+            <div class="col mb-1">
+                <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <p class="text-body-secondary">©HTML 2024</p>
+            </div>
+            <div class="col mb-1">
+                <h5>Contact:</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">Téléphone: <a href="callto:+320123456789">012345678</a></li>
+                    <li class="nav-item mb-2">E-mail: <a href="mailto:info@html.be">info@html.be</a></li>
+                </ul>
+            </div>
 
-      <div class="col mb-1">
-        <h5>Sections:</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-body-secondary">Accueil</a></li>
-          <li class="nav-item mb-2"><a href="./about.html" class="nav-link p-0 text-body-secondary">A propos</a></li>
-          <li class="nav-item mb-2"><a href="./pictures.html" class="nav-link p-0 text-body-secondary">Galerie</a></li>
-          <li class="nav-item mb-2"><a href="./menu.html" class="nav-link p-0 text-body-secondary">Notre menu</a></li>
-          <li class="nav-item mb-2"><a href="./contact.html" class="nav-link p-0 text-body-secondary">Contact</a></li>
-        </ul>
-      </div>
-    </footer>
-  </div>
+            <div class="col mb-1">
+                <h5>Sections:</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="./index.html"
+                            class="nav-link p-0 text-body-secondary">Accueil</a></li>
+                    <li class="nav-item mb-2"><a href="./about.html" class="nav-link p-0 text-body-secondary">A
+                            propos</a></li>
+                    <li class="nav-item mb-2"><a href="./pictures.html"
+                            class="nav-link p-0 text-body-secondary">Galerie</a></li>
+                    <li class="nav-item mb-2"><a href="./menu.html" class="nav-link p-0 text-body-secondary">Notre
+                            menu</a></li>
+                    <li class="nav-item mb-2"><a href="./contact.html"
+                            class="nav-link p-0 text-body-secondary">Contact</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 </body>
-</html>
 
+</html>

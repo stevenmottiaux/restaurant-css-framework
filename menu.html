@@ -10,13 +10,14 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
   <link rel="manifest" href="./assets/favicon/site.webmanifest">
+  <script src="https://kit.fontawesome.com/5073b27f18.js" crossorigin="anonymous"></script>
   <title>L'HTML - Meilleurs burgers de Belgique - Notre menu</title>
 </head>
 
 <body>
   <!-- Header qui contient le logo et le menu principal -->
-  <header class="header h-auto sticky-top">
-  <nav class="navbar sticky-top navbar-expand-lg border-bottom">
+  <header class="header sticky-top">
+  <nav class="navbar pb-0 sticky-top navbar-expand-lg border-bottom">
     <div class="container-fluid">
       <a class="navbar-brand d-block d-lg-none mx-auto" href="#">
         <img src="./assets/images/logo.png" alt="Logo" class="d-block mx-auto">
@@ -51,7 +52,7 @@
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="./menu.html">Burgers classiques</a></li>
+              <li><a class="dropdown-item" href="#classic-menu">Burgers classiques</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
@@ -172,6 +173,33 @@
             <p class="mb-0 opacity-75">Un burger à base de quinoa et de patates douces, accompagné d'avocat crémeux et de laitue croquante.</p>
           </div>
           <small class="opacity-50 text-nowrap">10€</small>
+        </div>
+      </a>
+    </div>
+  </div>
+  <!--Menu burgers classiques -->
+  <div id="classic-menu" class="d-flex flex-column flex-md-column p-4 gap-4 py-md-5 justify-content-center">
+    <div class="menu-section-title text-center m-auto underline-radient w-50 flex-nowrap"><h3>Les classiques</h3></div>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        <img src="./assets/images/burger-badge.png" alt="twbs" class="burger-badge rounded-circle flex-shrink-0">
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h4 class="mb-0">Le buger classique</h4>
+            <p class="mb-0 opacity-75">Un burger savoureux avec une galette de légumes grillés, du fromage fondant, et des légumes frais.</p>
+          </div>
+          <small class="opacity-50 text-nowrap">12€</small>
+        </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        <img src="./assets/images/burger-badge.png" alt="twbs" width="32" height="32"
+          class="burger-badge rounded-circle flex-shrink-0">
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h4 class="mb-0">Le cheeseburger</h4>
+            <p class="mb-0 opacity-75">Un burger garni de champignons portobello marinés, d'oignons caramélisés et de fromage de chèvre.</p>
+          </div>
+          <small class="opacity-50 text-nowrap">15€</small>
         </div>
       </a>
     </div>

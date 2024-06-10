@@ -10,6 +10,8 @@ Ce projet a été réalisé à l'aide de la librairie Bootstrap. Ce projet compo
 * Page "Menu" (ensemble du menu proposé par le restaurant)
 * Page contact (formulaire de contact)
 
+Le lien du site est &#x1F517;: ![lien site web](https://stevenmottiaux.github.io/restaurant-css-framework/)
+
 ## Description du contenu des pages &#x2139;:
 
 ### Page Accueil &#x1F3E0; : 
@@ -26,7 +28,7 @@ Cette page comporte 4 sections d'images. Les 3 premières comportent 3 images et
 
 ### Page Menu &#x1F4D6;:
 
-Cette page compoprte une liste avec des badges. Le menu disponible y est presénté.
+Cette page compoprte une liste avec des badges. Le menu disponible y est présenté.
 
 ### Page Contact &#x1F4E8;:
 

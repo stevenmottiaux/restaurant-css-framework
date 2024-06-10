@@ -18,6 +18,7 @@ body {
 
 .header {
     background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    height: 30%;
 }
 
 
@@ -72,5 +73,11 @@ a .active {
 	border-image-slice: 1;
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: column;  
+}
 
-
+.submit-button {
+    align-self: center;
+}
