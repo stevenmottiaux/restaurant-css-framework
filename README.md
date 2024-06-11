@@ -1,4 +1,4 @@
-# Projet site web restaurant - L'HTML ![l'html restautant badge](./favicon-32x32.png)
+# Projet site web restaurant - L'HTML ![l'html restautant badge](./assets/favicon/favicon-32x32.png)
 
 ## Description du projet &#x2139;:
 
