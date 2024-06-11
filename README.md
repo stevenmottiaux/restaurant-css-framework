@@ -1,4 +1,4 @@
-# Projet site web restaurant - L'HTML ![l'html restautant badge](./assets/images/burger-badge.png)
+# Projet site web restaurant - L'HTML ![l'html restautant badge](./favicon-32x32.png)
 
 ## Description du projet &#x2139;:
 
@@ -10,7 +10,7 @@ Ce projet a été réalisé à l'aide de la librairie Bootstrap. Ce projet compo
 * Page "Menu" (ensemble du menu proposé par le restaurant)
 * Page contact (formulaire de contact)
 
-Le lien du site est &#x1F517;: ![lien site web](https://stevenmottiaux.github.io/restaurant-css-framework/)
+Le lien du site est &#x1F517;: (https://stevenmottiaux.github.io/restaurant-css-framework/)
 
 ## Description du contenu des pages &#x2139;:
 
